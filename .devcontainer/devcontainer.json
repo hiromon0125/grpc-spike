@@ -1,0 +1,33 @@
+{
+  "name": "grpc-spike",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "remoteUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "cmake.configureOnOpen": false,
+        "python.defaultInterpreterPath": "/usr/bin/python3"
+      },
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools",
+        "twxs.cmake",
+        "vadimcn.vscode-lldb"
+      ]
+    }
+  },
+  "remoteEnv": {
+    "HOST_HOSTNAME": "host.docker.internal"
+  },
+  "forwardPorts": [50051],
+  "portsAttributes": {
+    "50051": {
+      "label": "Talos gRPC"
+    }
+  }
+}
