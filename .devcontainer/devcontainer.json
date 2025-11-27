@@ -24,7 +24,9 @@
   "remoteEnv": {
     "HOST_HOSTNAME": "host.docker.internal"
   },
-  "forwardPorts": [50051],
+  "forwardPorts": [
+    50051
+  ],
   "portsAttributes": {
     "50051": {
       "label": "Talos gRPC"

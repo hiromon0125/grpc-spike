@@ -28,3 +28,14 @@ With this repository, I want to attempt to solve all pain points of current impl
 - python-ws or client side application: This represents the python implementation of grpc using python that is going to mimic the job of the commander.
 
 While I am not going to fully mimic the job of the two applications I want to acomplish two things, fully implement the logic for sending and receiving messages from both ends, and also mimic the icd spec that we currently have for our robotic application.
+
+## Buf CLI integration
+
+- **Module file**: `proto/buf.yaml` — declares the proto module used by Buf.
+- **Workspace file**: `buf.work.yaml` — includes the `proto` directory as a module.
+- **Generate template**: `buf.gen.yaml` — a template showing example plugin outputs.
+
+Inside the devcontainer run:
+```bash
+buf generate
+```

@@ -1,0 +1,11 @@
+version: v1
+plugins:
+  - plugin: buf.build/protocolbuffers/python
+    out: python-ws/src/proto
+    opt: pyi_out
+  - plugin: buf.build/grpc/python
+    out: python-ws/src/proto
+  - plugin: buf.build/protocolbuffers/cpp
+    out: cpp-ws/generated
+  - plugin: buf.build/grpc/cpp
+    out: cpp-ws/generated
