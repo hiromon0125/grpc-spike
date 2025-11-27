@@ -191,3 +191,81 @@ class GetCartesianPositionResponse(_message.Message):
     y_tenths_mm: int
     z_tenths_mm: int
     def __init__(self, status: _Optional[_Union[CommandResult, _Mapping]] = ..., x_tenths_mm: _Optional[int] = ..., y_tenths_mm: _Optional[int] = ..., z_tenths_mm: _Optional[int] = ...) -> None: ...
+
+class PolarPanDiscreteResponse(_message.Message):
+    __slots__ = ()
+    STATUS_FIELD_NUMBER: _ClassVar[int]
+    status: CommandResult
+    def __init__(self, status: _Optional[_Union[CommandResult, _Mapping]] = ...) -> None: ...
+
+class HomeResponse(_message.Message):
+    __slots__ = ()
+    STATUS_FIELD_NUMBER: _ClassVar[int]
+    status: CommandResult
+    def __init__(self, status: _Optional[_Union[CommandResult, _Mapping]] = ...) -> None: ...
+
+class PolarPanContinuousStartResponse(_message.Message):
+    __slots__ = ()
+    STATUS_FIELD_NUMBER: _ClassVar[int]
+    status: CommandResult
+    def __init__(self, status: _Optional[_Union[CommandResult, _Mapping]] = ...) -> None: ...
+
+class PolarPanContinuousStopResponse(_message.Message):
+    __slots__ = ()
+    STATUS_FIELD_NUMBER: _ClassVar[int]
+    status: CommandResult
+    def __init__(self, status: _Optional[_Union[CommandResult, _Mapping]] = ...) -> None: ...
+
+class CartesianMoveDiscreteResponse(_message.Message):
+    __slots__ = ()
+    STATUS_FIELD_NUMBER: _ClassVar[int]
+    status: CommandResult
+    def __init__(self, status: _Optional[_Union[CommandResult, _Mapping]] = ...) -> None: ...
+
+class CartesianMoveContinuousStartResponse(_message.Message):
+    __slots__ = ()
+    STATUS_FIELD_NUMBER: _ClassVar[int]
+    status: CommandResult
+    def __init__(self, status: _Optional[_Union[CommandResult, _Mapping]] = ...) -> None: ...
+
+class CartesianMoveContinuousStopResponse(_message.Message):
+    __slots__ = ()
+    STATUS_FIELD_NUMBER: _ClassVar[int]
+    status: CommandResult
+    def __init__(self, status: _Optional[_Union[CommandResult, _Mapping]] = ...) -> None: ...
+
+class SetSpeedResponse(_message.Message):
+    __slots__ = ()
+    STATUS_FIELD_NUMBER: _ClassVar[int]
+    status: CommandResult
+    def __init__(self, status: _Optional[_Union[CommandResult, _Mapping]] = ...) -> None: ...
+
+class SavePositionResponse(_message.Message):
+    __slots__ = ()
+    STATUS_FIELD_NUMBER: _ClassVar[int]
+    status: CommandResult
+    def __init__(self, status: _Optional[_Union[CommandResult, _Mapping]] = ...) -> None: ...
+
+class DeletePositionResponse(_message.Message):
+    __slots__ = ()
+    STATUS_FIELD_NUMBER: _ClassVar[int]
+    status: CommandResult
+    def __init__(self, status: _Optional[_Union[CommandResult, _Mapping]] = ...) -> None: ...
+
+class GoToPositionResponse(_message.Message):
+    __slots__ = ()
+    STATUS_FIELD_NUMBER: _ClassVar[int]
+    status: CommandResult
+    def __init__(self, status: _Optional[_Union[CommandResult, _Mapping]] = ...) -> None: ...
+
+class SetPolarPositionResponse(_message.Message):
+    __slots__ = ()
+    STATUS_FIELD_NUMBER: _ClassVar[int]
+    status: CommandResult
+    def __init__(self, status: _Optional[_Union[CommandResult, _Mapping]] = ...) -> None: ...
+
+class SetCartesianPositionResponse(_message.Message):
+    __slots__ = ()
+    STATUS_FIELD_NUMBER: _ClassVar[int]
+    status: CommandResult
+    def __init__(self, status: _Optional[_Union[CommandResult, _Mapping]] = ...) -> None: ...
